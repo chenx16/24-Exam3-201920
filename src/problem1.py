@@ -3,9 +3,9 @@ Exam 3, problem 1.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Xinlai Chen.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -125,8 +125,32 @@ def problem1(n):
       :type n: int
       :rtype: int
     """
+    # x=[]
+    # x[0]=0
+    # x[1]=1
+    # k=0
+    #
+    # for j in range(n):
+    #     x[j+2]=x+x[j]+x[j+1]
+    #
+    #
+    #
+    # print(x)
+
+
+    x=1
+    while True:
+        x=x+1
+        if fibonacci(x)>=n:
+            break
+    return fibonacci(x-1)
+
+
+
+
+
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # done: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # **** IMPORTANT ****:
     # We supplied a   fibonacci   function above.
