@@ -61,7 +61,7 @@ def run_test_problem1():
     actual = problem1(x)  # Run the code to test
     print_actual_result_of_test(expected, actual, test_results)
 
-    # Test 5:
+    # Test5:
     x = 34
     expected = 21
     print_expected_result_of_test([x], expected,
