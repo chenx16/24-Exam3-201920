@@ -125,26 +125,39 @@ def problem1(n):
       :type n: int
       :rtype: int
     """
-    # x=[]
-    # x[0]=0
-    # x[1]=1
-    # k=0
+    # x=[0,1]
     #
-    # for j in range(n):
-    #     x[j+2]=x+x[j]+x[j+1]
+    # for j in range(100):
     #
+    #     x=x+[x[j]+x[j+1]]
     #
-    #
-    # print(x)
+    #     if x[j]>n:
+    #         return x[j-1]
+    #     elif x[j]==n:
+    #         return x[j-1]
 
 
-    x=1
+    a = 0
+    b = 1
+
     while True:
-        x=x+1
-        if fibonacci(x)>=n:
-            break
-    return fibonacci(x-1)
 
+        c = a+b
+        a = b
+        b = c
+        if c >=n:
+            return a
+
+
+
+
+
+    # x=1
+    # while True:
+    #     x=x+1
+    #     if fibonacci(x)>=n:
+    #         break
+    # return fibonacci(x-1)
 
 
 
